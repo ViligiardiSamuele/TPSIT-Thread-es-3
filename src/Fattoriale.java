@@ -16,10 +16,5 @@ public class Fattoriale extends Thread{
         for (int i = val; i > 0; i--)
             out *= i;
         val = out;
-        try {
-            this.join();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 }

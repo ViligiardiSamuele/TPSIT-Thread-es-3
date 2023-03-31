@@ -21,6 +21,9 @@ public class Main {
         fn.start();
         fk.start();
         fnSubk.start();
+        fn.join();
+        fk.join();
+        fnSubk.join();
         System.out.println("combinazioni("+n+","+k+"): " + fn.getVal() / (fk.getVal())* fnSubk.getVal());
     }
 }
